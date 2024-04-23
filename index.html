@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    
+    <H3 id="show">.</H3>
+    Q1. Where is the best place to learn coding<br>
+    <input type="radio" name="question1" id="correct1">SQI<br>
+    <input type="radio" name="question1">AMAON<br>
+    <input type="radio" name="question1">ALIBABA<br>
+    <input type="radio" name="question1">NETFLIX<br><br>
+
+    Q2. Who created you<br>
+    <input type="radio" name="question2">GOD<br>
+    <input type="radio" name="question2">FRIEND'S<br>
+    <input type="radio" name="question2" id="correct2">ME<br>
+    <input type="radio" name="question2">ALL OF ABOVE<br><br>
+
+    Q3. What is 28+3?<br>
+    <input type="radio" name="question3">88<br>
+    <input type="radio" name="question3" id="correct3">31 <br>
+    <input type="radio" name="question3">10 <br>
+    <input type="radio" name="question3">19 <br><br>
+
+    Q4. Who is te president of Nigeria<br>
+    <input type="radio" name="question4">BUHARI<br>
+    <input type="radio" name="question4" id="correct4">PETER OBI<br>
+    <input type="radio" name="question4">TRUMP<br>
+    <input type="radio" name="question4">STILL IN TOWN HALL<br><br>
+
+    Q5. when did Nigeria created<br>
+    <input type="radio" name="question5">1914<br>
+    <input type="radio" name="question5" id="correct5">1912<br>
+    <input type="radio" name="question5">1960<br>
+    <input type="radio" name="question5">1967<br><br>
+
+    Q6. are you still alive<br>
+    <input type="radio" name="questio6">NO<br>
+    <input type="radio" name="question6" id="correct6">YEAH<br>
+    <input type="radio" name="question6">DON'T KNOW<br>
+    <input type="radio" name="question6">CHECHING<br><br>
+
+    Q7. whhat year is this<br>
+    <input type="radio" name="question7">9th genaration<br>
+    <input type="radio" name="question7" id="correct7">2023<br>
+    <input type="radio" name="question7">2022<br>
+    <input type="radio" name="question7">2024<br><br>
+
+    Q8. What is 28+3?<br>
+    <input type="radio" name="question8">88<br>
+    <input type="radio" name="question8" id="correct8">31<br>
+    <input type="radio" name="question8">10 <br>
+    <input type="radio" name="question8">19 <br><br>
+
+    Q9. Who is te president of Nigeria<br>
+    <input type="radio" name="question9">PETER<br>
+    <input type="radio" name="question9" id="correct9">BUHARI<br>
+    <input type="radio" name="question9">TRUMP<br>
+    <input type="radio" name="question9">STILL IN TOWN HALL<br><br>
+
+    Q10. how old is me?<br>
+    <input type="radio" name="question10">9<br>
+    <input type="radio" name="question10" id="correct10">I DON'T KNOW<br>
+    <input type="radio" name="question10">EAST<br>
+    <input type="radio" name="question10">STILL IN TOWN HALL<br><br>
+
+    <input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+
+
+    <script type="text/javascript">
+        var screen = document.getElementById("show");
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            if (document.getElementById('correct6').checked) {
+                score++;
+            }
+            if (document.getElementById('correct7').checked) {
+                score++;
+            }
+            if (document.getElementById('correct8').checked) {
+                score++;
+            }
+            if (document.getElementById('correct9').checked) {
+                score++;
+            }
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            alert("Your score is:" + score);
+            if (score.value >= 9) {
+                alert("meet me at office to check if you score morethan 9");
+                return;
+            }
+            if (score.value >= 5 && checked.value <=8) {
+                alert("you pass your exam");
+                return;
+            }
+            if (score.value <= 4) {
+                alert("olodo you'r still in town hall");
+            }
+           // else if (score.value)
+        
+        }
+        console.log(correct4);
+   // screen.getElementById()
+    </script>
+
+</body>
+
+</html>
